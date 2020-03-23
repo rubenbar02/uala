@@ -13,6 +13,7 @@ class RBMealViewController: UIViewController {
     var _presenter: RBMealDetailsPresentContract?
     
     @IBOutlet var descriptionLabel: UITextView!
+    @IBOutlet var ingridientsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,7 @@ class RBMealViewController: UIViewController {
 extension RBMealViewController: RBMealDetailsViewContract {
     func loadMeals() {
         descriptionLabel.text = _presenter?.mealDescription()
+        ingridientsLabel.text = _presenter?.mealIngridient()
     }
     
     func showError(description: String) {

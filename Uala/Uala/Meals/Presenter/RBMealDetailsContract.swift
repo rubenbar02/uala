@@ -18,4 +18,5 @@ protocol RBMealDetailsPresentContract {
     func loadData()
     func mealDescription() -> String
     func mealTitle() -> String
+    func mealIngridient() -> String
 }
