@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,6 +31,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="PP1-zr-zEG"/>
+                    <connections>
+                        <segue destination="6Qq-A3-xbO" kind="show" identifier="details" id="64G-li-lWH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAF-Me-XHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,6 +54,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdY-XQ-xRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-426" y="150"/>
+        </scene>
+        <!--Meal View Controller-->
+        <scene sceneID="84m-8I-gx0">
+            <objects>
+                <viewController id="6Qq-A3-xbO" customClass="RBMealViewController" customModule="Uala" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D2f-7k-ber">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instrucicones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptM-Du-SpC">
+                                <rect key="frame" x="16" y="104" width="382" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rqK-HA-K2u">
+                                <rect key="frame" x="8" y="150" width="398" height="704"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rqK-HA-K2u" firstAttribute="leading" secondItem="LIH-sa-WVV" secondAttribute="leading" constant="8" id="04V-L6-e0n"/>
+                            <constraint firstItem="LIH-sa-WVV" firstAttribute="trailing" secondItem="ptM-Du-SpC" secondAttribute="trailing" constant="16" id="GNu-Et-4F3"/>
+                            <constraint firstItem="ptM-Du-SpC" firstAttribute="top" secondItem="LIH-sa-WVV" secondAttribute="top" constant="16" id="TNy-gW-Mde"/>
+                            <constraint firstItem="LIH-sa-WVV" firstAttribute="trailing" secondItem="rqK-HA-K2u" secondAttribute="trailing" constant="8" id="Tze-dp-lnH"/>
+                            <constraint firstItem="rqK-HA-K2u" firstAttribute="top" secondItem="ptM-Du-SpC" secondAttribute="bottom" constant="16" id="had-SC-nI3"/>
+                            <constraint firstItem="ptM-Du-SpC" firstAttribute="leading" secondItem="LIH-sa-WVV" secondAttribute="leading" constant="16" id="sRh-GF-lQc"/>
+                            <constraint firstItem="LIH-sa-WVV" firstAttribute="bottom" secondItem="rqK-HA-K2u" secondAttribute="bottom" constant="8" id="wEe-j4-eKb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LIH-sa-WVV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9dD-5i-ujB"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="rqK-HA-K2u" id="WaJ-Hw-DPU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udb-hd-rIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346.376811594203" y="150"/>
         </scene>
     </scenes>
 </document>

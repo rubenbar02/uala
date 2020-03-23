@@ -15,6 +15,9 @@
 		F35C7C9B242912DC00256D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35C7C99242912DC00256D3D /* LaunchScreen.storyboard */; };
 		F35C7CA6242912DD00256D3D /* UalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35C7CA5242912DD00256D3D /* UalaTests.swift */; };
 		F35C7CB1242912DD00256D3D /* UalaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35C7CB0242912DD00256D3D /* UalaUITests.swift */; };
+		F37C34F024294E4B0023737E /* RBMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C34EF24294E4B0023737E /* RBMealViewController.swift */; };
+		F37C34F224294E9C0023737E /* RBMealDetailsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C34F124294E9C0023737E /* RBMealDetailsContract.swift */; };
+		F37C34F424294F130023737E /* RBMealDetailsPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C34F324294F130023737E /* RBMealDetailsPresent.swift */; };
 		F3F7D46F2429172600D96BC8 /* RBMealsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D46E2429172600D96BC8 /* RBMealsService.swift */; };
 		F3F7D4742429289A00D96BC8 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D4732429289A00D96BC8 /* Meal.swift */; };
 		F3F7D47624292B3600D96BC8 /* RBGetMealResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D47524292B3600D96BC8 /* RBGetMealResponse.swift */; };
@@ -62,6 +65,9 @@
 		F35C7CAC242912DD00256D3D /* UalaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UalaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35C7CB0242912DD00256D3D /* UalaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UalaUITests.swift; sourceTree = "<group>"; };
 		F35C7CB2242912DD00256D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F37C34EF24294E4B0023737E /* RBMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBMealViewController.swift; sourceTree = "<group>"; };
+		F37C34F124294E9C0023737E /* RBMealDetailsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBMealDetailsContract.swift; sourceTree = "<group>"; };
+		F37C34F324294F130023737E /* RBMealDetailsPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBMealDetailsPresent.swift; sourceTree = "<group>"; };
 		F3F7D46E2429172600D96BC8 /* RBMealsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBMealsService.swift; sourceTree = "<group>"; };
 		F3F7D4732429289A00D96BC8 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		F3F7D47524292B3600D96BC8 /* RBGetMealResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBGetMealResponse.swift; sourceTree = "<group>"; };
@@ -205,6 +211,7 @@
 				F3F7D48124293A5C00D96BC8 /* Cell */,
 				F3F7D47924292FF800D96BC8 /* Meal.storyboard */,
 				F3F7D47B242931F400D96BC8 /* RBMealsTableViewController.swift */,
+				F37C34EF24294E4B0023737E /* RBMealViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +221,8 @@
 			children = (
 				F3F7D47D2429321F00D96BC8 /* RBMealsContract.swift */,
 				F3F7D47F242933C500D96BC8 /* RBMealsPresenter.swift */,
+				F37C34F124294E9C0023737E /* RBMealDetailsContract.swift */,
+				F37C34F324294F130023737E /* RBMealDetailsPresent.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -406,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F7D47624292B3600D96BC8 /* RBGetMealResponse.swift in Sources */,
+				F37C34F224294E9C0023737E /* RBMealDetailsContract.swift in Sources */,
 				F3F7D4742429289A00D96BC8 /* Meal.swift in Sources */,
 				F35C7C93242912DA00256D3D /* ViewController.swift in Sources */,
 				F3F7D47C242931F400D96BC8 /* RBMealsTableViewController.swift in Sources */,
@@ -414,7 +424,9 @@
 				F35C7C8F242912DA00256D3D /* AppDelegate.swift in Sources */,
 				F3F7D480242933C500D96BC8 /* RBMealsPresenter.swift in Sources */,
 				F35C7C91242912DA00256D3D /* SceneDelegate.swift in Sources */,
+				F37C34F424294F130023737E /* RBMealDetailsPresent.swift in Sources */,
 				F3F7D48624293A9100D96BC8 /* RBTableViewCell.swift in Sources */,
+				F37C34F024294E4B0023737E /* RBMealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

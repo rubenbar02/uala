@@ -11,5 +11,8 @@ import Foundation
 struct Meal: Decodable {
     let idMeal: String
     let strMeal: String
+    let strCategory: String
+    let strMealThumb: String
     let strDrinkAlternate: String?
+    let strInstructions: String
 }
